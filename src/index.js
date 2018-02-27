@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-const title = "My minimal React Webpack Babel Setup";
+import { BrowserRouter } from "react-router-dom";
+import App from "./containers/App";
 
 ReactDOM.render(
-    <div>{title}</div>,
-    document.getElementById("app")
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>,
+    document.getElementById("root")
 );
 
 module.hot.accept();
