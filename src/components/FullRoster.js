@@ -6,9 +6,9 @@ export const FullRoster = () => (
     <div>
         <ul>
             {
-                getAll().map(p => (
+                getAll().map((p, i) => (
                     <li key={p.number}>
-                        <Link to={`/roster/${p.number}`}>{p.name}</Link>
+                        <Link to={`/roster/${i}`}>{p.name}</Link>
                     </li>
                 ))
             }

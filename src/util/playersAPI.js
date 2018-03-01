@@ -20,7 +20,7 @@ export function getPlayer(index){
     if(index >= players.length){
         return null;
     }
-    return Players[index];
+    return players[index];
 }
 
 export function getAll(){
